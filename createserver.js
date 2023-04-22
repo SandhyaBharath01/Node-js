@@ -6,6 +6,6 @@ const server = http.createServer((req, res) => {
   res.end('Sandhya');
 });
 
-server.listen(5000, () => {
+server.listen(4000, () => {
   console.log('Server started on port 5000 Sandhya');
 });
