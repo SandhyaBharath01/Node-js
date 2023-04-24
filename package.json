@@ -1,0 +1,16 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "complete node js guide",
+  "main": "files.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node files.js",
+    "start-server": "node files.js"
+  },
+  "author": "SANDHYA",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}

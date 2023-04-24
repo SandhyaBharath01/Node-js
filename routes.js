@@ -31,7 +31,7 @@ const requestHandler = (req,res)=>{
     res.write('<head><title>filespage</title></head>');
     res.write('<body>');
     if(fs.existsSync('mess.txt')){
-        const mess = fs.readFileSync('mess.txt','utf8');
+        const mess = fs.readFileSync('mess.txt');
         res.write(`${mess}`);
     }
     res.write('<form action="/mess" method="POST"><input type="text" name="mess"><button type="submit">Send</button></form>');
