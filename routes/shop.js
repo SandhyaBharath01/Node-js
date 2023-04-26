@@ -1,10 +1,16 @@
+const path = require('path');
+
 const express = require('express');
 
-const router = express.Router();  
+const router = express.Router();
 
-router.get('/',(req,res,next)=>{
-    console.log("In the another middlewave");
-    res.send('<h1>Hello from Express!</h1>');
+router.get('/shop', (req, res, next) => {
+  res.sendFile(path.join(__dirname,'../','views','shop.html'));
+});
+
+router.post('/shop', (req, res, next) => {
+  console.log(req.body);
+  res.redirect('/');
 });
 
 module.exports = router;
