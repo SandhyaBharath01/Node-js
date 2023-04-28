@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Home</title>
+  <style>
+    body{
+        padding: 0;
+        margin: 0;
+        font-family: sans-serif;
+    }
+    .main-header{
+        width: 100%;
+        height: 5.5rem;
+        background-color: rgb(245, 245, 92);
+        padding: 0 1.5rem;
+    }
+    .main-header_items-list{
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    .main-header_item {
+        margin:0 1rem;
+        padding:0;
+    }
+    .main-header_item a{
+        text-decoration: none;
+        color:rgb(11, 154, 11);
+
+
+    }
+    .main-header_item a:hover,
+    .main-header_item a:active,
+    .main-header_item a.active{
+        color: rgb(255, 0, 179);
+
+    }
+    .main-header_nav{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    main{
+        padding: 1 rem;
+    }
+    .product-form {
+        width: 20rem;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .form-control {
+        margin: 1rem 0;
+    }
+
+    .form-control label,
+    .form-control input {
+        display: block;
+        width: 100%;
+    }
+
+    .form-control input {
+        border: 1px solid #dbc441;
+        font: inherit;
+        border-radius: 2px;
+    }
+
+    button {
+        font: inherit;
+        border: 1px solid #3e00a1;
+        color: #3e00a1;
+        background: white;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    button:hover,
+    button:active {
+        background-color: #3e00a1;
+        color: white;
+    }
+</style>
+</head>
+<body>
+  <h1>Welcome Home</h1>
+  <header class="main-header">
+  <nav class="main-header_nav">
+    <ul class="main-header_items-list">
+      <li class="main-header_item"><a href="/shop">Shop</a></li>
+      <li class="main-header_item"><a class="active" href="/home">Home</a></li>
+      <li class="main-header_item"><a href="/contact">Contact Us</a></li>
+      <li class="main-header_item"><a href="/addproduct">Add Product</a></li>
+    </ul>
+  </nav>
+  </header>
+  <p><h2>This is the home page.</h2></p>
+</body>
+</html>
